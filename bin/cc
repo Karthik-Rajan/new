@@ -1,0 +1,6 @@
+sudo chmod -R 777 app/cache app/logs composer.json
+app/console --env=prod cache:clear
+app/console cache:clear
+sudo chmod -R 777 app/cache app/logs
+sudo chown -R testing .
+app/console assetic:dump
